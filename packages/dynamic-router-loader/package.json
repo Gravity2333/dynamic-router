@@ -1,0 +1,13 @@
+{
+  "name": "dynamic-router-loader",
+  "description": "动态路由加载器 需要配合webpack使用 用来加载路由配置文件 (CommonJs)",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js"
+    }
+  }
+}

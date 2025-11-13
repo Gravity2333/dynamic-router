@@ -1,0 +1,50 @@
+{
+  "name": "dynamic-router",
+  "version": "0.0.1",
+  "description": "dynamic-router 工具",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "liuze <liuze@machloop.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "packages/dynamic-router-core/dist/index.js",
+  "module": "packages/dynamic-router-core/dist/index.js",
+  "types": "packages/dynamic-router-core/dist/index.d.js",
+  "exports": {
+    ".": {
+      "import": "./packages/dynamic-router-core/dist/index.js",
+      "types": "./packages/dynamic-router-core/dist/index.d.js"
+    },
+    "./loader": {
+      "require": "./packages/dynamic-router-loader/index.js"
+    },
+    "./split-loader": {
+      "require": "./packages/dynamic-router-split-loader/index.js"
+    },
+    "./history": {
+      "import": "./packages/dynamic-router-history/dist/index.js",
+      "types": "./packages/dynamic-router-history/dist/index.d.js"
+    }
+  },
+  "files": [
+    "src",
+    "index.ts",
+    "dist"
+  ],
+  "scripts": {
+    "clean": "tsc -b --clean",
+    "build": "tsc -b"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "moment": "^2.29.3",
+    "numeral": "^2.0.6",
+    "reflect-metadata": "^0.2.2",
+    "sqlstring": "^2.3.2",
+    "uuid": "^8.3.2"
+  }
+}

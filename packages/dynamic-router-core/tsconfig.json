@@ -1,0 +1,25 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "lib": [
+            "DOM"
+        ],
+        "jsx": "react-jsx", // 推荐 React 17+ 或 React 18 ｜ 老版本直接用 react (依赖 react变量)
+        "jsxImportSource": "react", // 可选，只有在使用自动 JSX runtime 时
+        "outDir": "dist",
+        "rootDir": "src",
+        "composite": true,
+        "sourceMap": false,
+        "declarationMap": false,
+        "removeComments": true,
+        "esModuleInterop": true,
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "dist"
+    ]
+}

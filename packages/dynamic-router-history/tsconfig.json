@@ -1,0 +1,19 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "lib":["DOM"],
+        "outDir": "dist",
+        "rootDir": "src",
+        "composite": true, 
+        "sourceMap": false,
+        "declarationMap": false,
+        "removeComments": true,
+        "esModuleInterop": true,
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": ["dist"]
+}

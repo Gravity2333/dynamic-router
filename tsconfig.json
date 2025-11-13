@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ESNext",
+    "declaration": true, // 输出 .d.ts
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": false,
+    "declarationMap": false   // 禁用声明映射文件
+  },
+  "nohoist": [
+    /* 禁止提升的 放在这里 */
+  ],
+  "references": [
+    {
+      "path": "packages/dynamic-router-history"
+    },
+    {
+      "path": "packages/dynamic-router-core"
+    }
+  ]
+}

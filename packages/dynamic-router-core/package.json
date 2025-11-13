@@ -1,0 +1,30 @@
+{
+  "name": "dynamic-router-core",
+  "description": "动态路由Core组件，仅支持EsModule方式引入",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./hooks": {
+      "import": "./dist/hooks/index.js",
+      "types": "./dist/hooks/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.4"
+  },
+  "dependencies": {
+    "dynamic-router-history": "^1.0.0",
+    "path-to-regexp": "^8.3.0",
+    "react": ">=17.x"
+  },
+  "peerDependencies": {
+    "react": ">=17.x"
+  }
+}
